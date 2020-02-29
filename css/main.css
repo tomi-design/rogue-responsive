@@ -1,0 +1,396 @@
+html {
+	font-size: 16px;
+	height:100%;
+	width:100%;
+}
+
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	font-size: 1em;
+	/*when i gave this body 100% height the h1 title disappeared in the mobile*/
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow:row wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: 0.75em;
+	padding: 1em 0;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.3125em;
+}
+
+/* header section-------------------*/
+
+
+header {
+	height: 100%;
+	margin: 0 auto;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	margin: 0;
+	padding: 1em 0;
+	border-bottom: 3px solid #77a466;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 1em 0;
+	line-height: 2.5em;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.9em;
+	padding: 0 0.625em;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/* top and bottom section--------------*/
+
+
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+}
+
+/* top section------------------------*/
+
+.main-image {
+	height: auto;
+	width:90%;
+}
+
+.main-image img {
+	width: 100%;
+	border-top: 0.188em solid #77a466;
+	border-bottom: 0.188em solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	width: 90%; 
+}
+.main-title h3 {
+	text-align: left;
+	font-size:1.1em;
+	padding: 0.75em 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.75em;
+}
+
+/* bottom section-------------------*/
+
+.section-one,
+.section-two,
+.section-three {
+	width: 90%;
+	height: auto;
+	border-top: 0.063em solid #eee;
+}
+
+.section-one h4 {
+	padding: 0.625em 0;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 0.625em 0;
+	color:#77a466;
+}
+
+.section-two {
+    text-align:left;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.75em;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.75em;
+	padding-bottom:2em;
+}
+
+
+/* footer -----------------------*/
+
+footer {
+	height: 3.125em;
+	border-top: 0.188em solid #eee;
+	margin: 0 auto;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:2em;
+	padding-bottom:2em;
+}
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media all and (min-width: 768px) {
+	body {
+		padding:3em;
+	}
+    header h1 {
+		font-size:2.5em; 
+	}
+
+	header nav {
+		font-size:1.5em;
+		padding-bottom:1.5em;
+	}
+	
+	.top-section h3 {
+		font-size:1.4em;
+		padding:1.4em 0 1.3em 0;
+	}
+
+	.top-section p {
+		font-size:1.3em;
+		padding-bottom:1.5em;
+	}
+
+	.main-image img {
+		width: 100%; 
+	}
+
+	.bottom-section h4 {
+		font-size: 1.2em;
+	}
+
+	.bottom-section p {
+		font-size:1.3em;
+	}
+    .menu li {
+		font-size: 1.3em; ;
+	}
+
+	footer h4 {
+		font-size:1em; 
+	}
+	}
+
+
+   @media all and (min-width: 1200px) {
+	
+	
+	header {
+		height: 6.875em;
+		width:100%;
+		border-bottom: 0.188em solid #77a466;
+		margin: 0 auto;
+		display:flex;
+		flex-direction:row;
+		justify-content: space-between;
+	}
+	
+	header h1 {
+		font-size:3em; 
+		margin: 0;
+		padding: 2.375em 0;
+	}
+
+	header h1 span {
+		color: #77a466;
+	}
+	
+	header nav {
+		padding: 2.875em 0;
+	}
+
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.75em;
+		padding: 0 0.625em;
+		display:inline; /*this helps the nav to not stack column wise but to go horizontally*/
+	}
+
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+	}
+
+	.top-section {
+		padding-bottom:1.5em; 
+	}
+
+	
+	.main-image {
+		height: auto;
+		width:100%;
+	}
+
+	.main-image img {
+		height: 100%;
+		width: 100%;
+		border-bottom: 0.3em solid #77a466;
+	}
+	
+	.main-title {
+		height: auto;
+		width: 100%; 
+	}
+
+	.main-title h3 {
+		text-align: left;
+		color: #77a466;
+		font-size:1.3em; 
+		padding-bottom: 0.75em; 
+	}
+
+	.main-title p {
+		padding: 0;
+		font-size: 1.2em;
+		line-height: 1.7em;
+	}
+
+	.bottom-section {
+		display:flex; 
+		flex-direction:row; 
+		justify-content:center;
+		align-items: flex-start;
+		max-width: 75em;
+	}
+	
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		border-top: 0.1em solid #eee;
+	}
+	
+	.section-two {
+		border-left: 0.063em solid #eee;
+		border-right: 0.063em solid #eee;
+	}
+
+	.section-two,
+	.section-three h4 {
+		padding-left: 1.5em; 
+	}
+
+	.section-two,
+	.section-three p {
+		padding-left: 1.5em; 
+		padding-bottom: 1em; 
+	}
+	
+	.menu {
+		list-style: none;
+		padding: 0;
+	}
+
+	.menu li {
+		color:#77a466;
+	}
+	
+	.reviews {
+		color: #333;
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+	
+	.address {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+	
+	footer {
+		display:flex;
+		justify-content: center;
+		height: 4em;
+		width: 100%;
+		border-top: 0.188em solid #eee;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	footer span {
+		font-family: 'Wisdom Script', cursive;
+		text-transform: lowercase;
+		color: #77a466;
+		font-size: 14px;
+	}
+	
