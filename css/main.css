@@ -258,7 +258,6 @@ footer span {
 		height: 6.875em;
 		width:100%;
 		border-bottom: 0.188em solid #77a466;
-		margin: 0 auto;
 		display:flex;
 		flex-direction:row;
 		justify-content: space-between;
@@ -266,29 +265,17 @@ footer span {
 	
 	header h1 {
 		font-size:3em; 
-		margin: 0;
 		padding: 2.375em 0;
 	}
 
-	header h1 span {
-		color: #77a466;
-	}
-	
 	header nav {
 		padding: 2.875em 0;
 	}
 
 	header nav ul li {
-		text-transform: uppercase;
-		font-weight: 700;
 		font-size: 0.75em;
 		padding: 0 0.625em;
 		display:inline; /*this helps the nav to not stack column wise but to go horizontally*/
-	}
-
-	header nav ul li a{
-		text-decoration: none;
-		color:#77a466;
 	}
 
 	.top-section {
@@ -302,8 +289,6 @@ footer span {
 	}
 
 	.main-image img {
-		height: 100%;
-		width: 100%;
 		border-bottom: 0.3em solid #77a466;
 	}
 	
@@ -313,14 +298,11 @@ footer span {
 	}
 
 	.main-title h3 {
-		text-align: left;
-		color: #77a466;
 		font-size:1.3em; 
 		padding-bottom: 0.75em; 
 	}
 
 	.main-title p {
-		padding: 0;
 		font-size: 1.2em;
 		line-height: 1.7em;
 	}
@@ -356,41 +338,20 @@ footer span {
 		padding-left: 1.5em; 
 		padding-bottom: 1em; 
 	}
-	
-	.menu {
-		list-style: none;
-		padding: 0;
-	}
 
-	.menu li {
-		color:#77a466;
-	}
 	
 	.reviews {
 		color: #333;
 		font-size: 1em;
 		line-height: 1.4em;
 	}
-	
+
 	.address {
 		font-size: 1em;
 		line-height: 1.5em;
 	}
 	
 	footer {
-		display:flex;
-		justify-content: center;
-		height: 4em;
 		width: 100%;
-		border-top: 0.188em solid #eee;
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	footer span {
-		font-family: 'Wisdom Script', cursive;
-		text-transform: lowercase;
-		color: #77a466;
-		font-size: 14px;
 	}
 	
